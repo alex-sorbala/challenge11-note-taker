@@ -4,7 +4,7 @@ const fs = require('fs');
 const util = require('util');
 const crypto = require('crypto');
 
-const PORT = 3001
+const PORT = process.env.PORT || 3001;
 
 // Initialize an instance of Express.js
 const app = express();
